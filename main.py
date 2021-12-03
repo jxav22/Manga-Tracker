@@ -13,7 +13,9 @@ import os
 from utils import *
 
 # load and update manga database
-db = MangaDatabase()
+dl = r"C:\Users\Francis Xavier\Documents\Python\timebomb\database.py"
+
+db = MangaDatabase();
 db.load(dl)
 db.update()
 db.save(dl)

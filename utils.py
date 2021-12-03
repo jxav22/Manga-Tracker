@@ -371,13 +371,3 @@ class MangaDatabase:
     def get_plus(self):
         """Returns a database containing all the manhwa published by MangaPlus"""
         return MangaDatabase([manhwa for manhwa in self.data if isinstance(manhwa, MangaPlus)])
-
-# database location
-dl = r"C:\Users\Francis Xavier\Documents\Python\timebomb\database.py"
-
-db = MangaDatabase();
-db.load(dl)
-
-"""
-db.save(dl)
-"""
