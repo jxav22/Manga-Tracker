@@ -10,12 +10,12 @@ Author:Jason X
 """
 
 import os
-from utils import *
+from MangaDatabase import *
 
 # load and update manga database
-dl = r"C:\Users\Francis Xavier\Documents\Python\timebomb\database.py"
+dl = r"database.py"
 
-db = MangaDatabase();
+db = MangaDatabase()
 db.load(dl)
 db.update()
 db.save(dl)
@@ -24,7 +24,7 @@ db.save(dl)
 db.unread(20).show(1)
 os.system("pause")
 """
-RANDOM CODE THAT WAS MADE DURING TESTING:
+TESTING CODE:
 
 pickle helper
 
